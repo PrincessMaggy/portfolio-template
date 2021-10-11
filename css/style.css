@@ -631,13 +631,50 @@ section h3.section-subheading {
     }
 }
 
+/* 7.0 ======= ABOUT ME ========= */
 
-
+.profile{
+    display: flex;
+    margin: 2em;
+    
+   
+}
+.profile-img{
+    max-width: 60%;
+    border-radius: 50%;
+   
+}
+.profile-content{
+    max-width: 50%;
+}
 .social-buttons {
-    text-align: center;
+     text-align: center;
     float: left;
     padding-top: 15px;
+   
 }
+@media (max-width:768px) {
+    .profile{
+        flex-direction: column;
+    text-align: center;
+    
+    }
+    .profile-img{
+        max-width: 100%;
+       
+       
+    }
+    .profile .title{
+        color: #dd058a;
+    }
+    .profile-content{
+        max-width: 100%;
+    }
+    .profile .social-buttons{
+        float: none;
+    }
+}
+
 /* 8.0 ==========   PORTFOLIO   ============*/
 
 section#portfolio {
