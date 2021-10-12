@@ -1027,13 +1027,7 @@ img::-moz-selection {
 
 /* 12.0  ===== CONTACT ============*/
 
-#map-canvas {
-    width: 100%;
-    height: 400px;
-    margin: 0;
-    padding: 15px;
-    border-radius: 5px;
-}
+
 
 .company-address,
 .company-contact {
@@ -1056,14 +1050,13 @@ section#contact {
     min-height: 900px;
    box-shadow: none !important;
   margin-bottom: 0px !important;
+ 
 }
 
 section#contact .section-heading {
     color: #fff !important;
 }
-section#contact .section-subheading {
-    color: #fff !important;
-}
+
 section#contact .section-heading-contact {
     font-size: 60px;
     margin-top: 0;
