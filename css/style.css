@@ -284,7 +284,7 @@ h6 {
 #header {
     position: relative;
     color: #fff;
-    height: 100%;
+    height: auto;
 }
 
 .intro-text {
@@ -296,9 +296,9 @@ h6 {
     font-family: "lato";
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 80px;
-    margin-bottom: 45px;
+    font-size: 50px;
+    /* line-height: 80px; */
+    margin-bottom: 25px;
 }
 
 .intro-text .intro-heading {
@@ -306,19 +306,19 @@ h6 {
     text-transform: uppercase;
     font-size: 70px;
     line-height: 0px;
-    margin-bottom: 10px
+    /* margin-bottom: 10px */
 }
 
 .intro-text .intro-paragraph {
     font-size: 21px;
     font-family: "source sans pro", "Droid Serif";
-    margin-top: 70px;
+    /* margin-top: 70px; */
 }
 
 @media (max-width: 450px) {
 
     .intro-text {
-    padding-bottom: 35px;
+    /* padding-bottom: 35px; */
     text-align: center;
 }
 }
@@ -378,19 +378,11 @@ h6 {
 .carousel-caption h1 {
     font-size: 46px;
     margin-bottom: 0;
-    line-height: 27px;
+    /* line-height: 27px; */
     letter-spacing: 2px;
     font-weight: 100;
 }
 
-.carousel-caption h2 {
-    font-size: 81px;
-    font-weight: 600;
-    margin-top: 0px;
-    text-transform: lowercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
 
 .myCarousel-one-left,
 .myCarousel-one-right {
@@ -478,18 +470,18 @@ video {
 .carousel-caption {top:20%;}
 .intro-text .intro-paragraph {
     font-size: 15px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 .intro-text .intro-lead-in {
     font-size: 60px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .intro-text .intro-heading {
     font-size: 20px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .intro-text {
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 }
 @media (max-width: 920px){
@@ -497,15 +489,15 @@ video {
 .carousel-caption {top:25%;}
 .intro-text .intro-paragraph {
     font-size: 12px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 .intro-text .intro-lead-in {
     font-size: 20px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .intro-text .intro-heading {
     font-size: 30px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .intro-text {
     padding-bottom: 10px;
@@ -514,7 +506,7 @@ video {
 @media (max-width: 600px){
 .intro-text .intro-lead-in {
     font-size: 20px;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
 }
 .carousel-caption .btn {
     display: none;
@@ -640,8 +632,8 @@ section h3.section-subheading {
    
 }
 .profile-img{
-    max-width: 60%;
-    border-radius: 50%;
+    width: 45%;
+    border-radius: 100%;
    
 }
 .profile-content{
@@ -683,11 +675,16 @@ section#portfolio {
 }
 
 .img-responsive {
-    width: 100%;
+    width:400px;
 }
-
-.portfolio-items {
-    padding: 0px !important;
+.arrow{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.portfolio-item {
+    padding: 20px !important;
+    border: 0.5px solid rgba(56, 2, 82, 0.97);
 }
 
 .isotope-item {
@@ -730,68 +727,9 @@ section#portfolio {
 }
 
 .portfolio-item {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     height: 100%;
     width: 100%;
-}
-
-.portfolio-item .hover-bg {
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.portfolio-item:hover {
-    background-color: #fff;
-    z-index: 9999;
-}
-
-.hover-bg .hover-text {
-    position: absolute;
-    text-align: center;
-    margin: 0 auto;
-    color: #ffffff;
-    background: linear-gradient(to right, rgba(93, 14, 130, 0.97), rgba(210, 21, 194, 0.9));
-    padding: 25% 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.hover-bg .hover-text>h4 {
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    transition: all 0.3s;
-    font-size: 35px;
-}
-
-.hover-bg:hover .hover-text>h4 {
-    opacity: 1;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-
-.hover-bg .hover-text>i {
-    opacity: 0;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    transition: all 0.3s;
-}
-
-.hover-bg:hover .hover-text>i {
-    opacity: 1;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-}
-
-.hover-bg:hover .hover-text {
-    opacity: 1;
 }
 
 .portfolio-wrapper ul.filter {
@@ -910,113 +848,6 @@ ul.filter li a:hover {
     background-color: rgba(93, 14, 130, 0.97);
     color: #fff;
     font-weight: 500;
-}
-
-
-/* 8.1  ====================  Portfolio modals ================ */
-
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn:active:focus {
-    outline: 0
-}
-
-.portfolio-modal .modal-content {
-    border-radius: 0;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 0;
-    min-height: 100%;
-    padding: 100px 0;
-    text-align: center
-}
-
-.portfolio-modal .modal-content h2 {
-    margin-bottom: 15px;
-    font-size: 3em
-}
-
-.portfolio-modal .modal-content p {
-    margin-bottom: 30px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.portfolio-modal .modal-content p.item-intro {
-    margin: 20px 0 30px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 17px;
-}
-
-.portfolio-modal .modal-content ul.list-inline {
-    margin-bottom: 30px;
-    margin-top: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.portfolio-modal .modal-content img {
-    margin-bottom: 30px
-}
-
-.portfolio-modal .close-modal {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    top: 25px;
-    right: 25px;
-    cursor: pointer
-}
-
-.portfolio-modal .close-modal:hover {
-    opacity: .3
-}
-
-.portfolio-modal .close-modal .lr {
-    height: 75px;
-    width: 1px;
-    margin-left: 35px;
-    background-color: #222;
-    transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    z-index: 1051
-}
-
-.portfolio-modal .close-modal .lr .rl {
-    height: 75px;
-    width: 1px;
-    background-color: #222;
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    z-index: 1052;
-}
-
-.portfolio-modal .modal-backdrop {
-    opacity: 0;
-    display: none;
-}
-
-::-moz-selection {
-    text-shadow: none;
-    background: #fed136;
-}
-
-::selection {
-    text-shadow: none;
-    background: #57554d;
-}
-
-img::selection {
-    background: 0 0;
-}
-
-img::-moz-selection {
-    background: 0 0;
 }
 
 
